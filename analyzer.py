@@ -18,7 +18,7 @@ def check_symbols(password):
 
 def load_common_passwords():
     try:
-        with open("common_passwords.txt", "r") as f:
+        with open("commonpwd.txt", "r") as f:
             return set(p.strip() for p in f.readlines())
     except:
         return set()
