@@ -17,7 +17,12 @@ def check_symbols(password):
     return len(re.findall(r'[!@#$%^&*(),.?":{}|<>]', password))
 
 password = input("Enter password: ")
-print(password)
+print("Length:", check_length(password))
+print("Uppercase:", check_upper(password))
+print("Lowercase:", check_lower(password))
+print("Digits:", check_digits(password))
+print("Symbols:", check_symbols(password))
+
 
 def load_common_passwords():
     try:
