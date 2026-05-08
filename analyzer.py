@@ -16,6 +16,9 @@ def check_digits(password):
 def check_symbols(password):
     return len(re.findall(r'[!@#$%^&*(),.?":{}|<>]', password))
 
+password = input("Enter password: ")
+print(password)
+
 def load_common_passwords():
     try:
         with open("commonpwd.txt", "r") as f:
